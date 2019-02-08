@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<nav th:replace="fragments :: navigation"></nav>
+
+<ul>
+    <li th:each="object : ${categories}" th:text="${object.name}"></li>
+</ul>
+
+</body>
+</html>
